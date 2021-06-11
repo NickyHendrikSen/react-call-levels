@@ -34,7 +34,7 @@ class App extends React.Component {
     })
     .then(res => {
       console.log(res)
-      this.getItem()
+      this.props.getItem()
     })
   }
 

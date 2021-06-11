@@ -20,7 +20,7 @@ class App extends React.Component {
     }
   }
 
-  getItem(){
+  getItem = () => {
     axios.get("http://localhost:3001/api/getItem")
     .then(res => {
       this.setState({"items": res.data})
@@ -92,7 +92,9 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        {this.state.popup.show ? <EditItem id={this.state.popup.id} name={this.state.popup.name} price = {this.state.popup.price} closePopUp = {this.closePopUp}/> : ""}
+        {this.state.popup.show ? <EditItem id={this.state.popup.id} name={this.state.popup.name} 
+          price = {this.state.popup.price} closePopUp = {this.closePopUp}
+          getItem = {this.getItem}/> : ""}
         <div className="Wrapper">
           <div className="AddDiv">
             <p>New Item</p>
