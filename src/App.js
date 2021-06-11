@@ -33,8 +33,24 @@ class App extends React.Component {
             </div>
           </form>
         </div>
-        <div>
-          
+        <div className="ViewDiv">
+          <p>Item List</p>
+          <hr></hr>
+          <div className="Items">
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+              {this.state.items.map(item => (
+                <tr>
+                  <td>{item.Name}</td>
+                  <td>{item.Price}</td>
+                </tr>
+              ))}
+            </table>
+          </div>
         </div>
       </div>
     );
