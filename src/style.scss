@@ -3,60 +3,62 @@
     padding: 0;
 }
 .App{
-    padding: 20px;
-    .AddDiv{
-        width: 30%;
-        box-shadow: 0px 0px 5px 1px #000000;
-        border-radius: 4px;
+    .Wrapper{
         padding: 20px;
-        form{
-            .input{
-               width: 80%;
-               margin: 20px 0px;
-                div{
-                  width: 100%;
-                }
-            }
-        }
-        p{
-            color: black;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-    }
-    .ViewDiv{
-        margin-top: 20px;
-        width: 80%;
-        box-shadow: 0px 0px 5px 1px #000000;
-        border-radius: 4px;
-        padding: 20px;
-        form{
-            .input{
-               width: 80%;
-               margin: 20px 0px;
-                div{
-                  width: 100%;
-                }
-            }
-        }
-        .Items{
-            table{
-                width: 100%;
-                text-align: center;
-                border-spacing: 0px 2px;
-                tr{
-                    height: 50px;
-                    background-color: rgba(206, 206, 206, 0.452);
-                    th{
-                        background-color: rgb(131, 131, 131);
+        .AddDiv{
+            width: 30%;
+            box-shadow: 0px 0px 5px 1px #000000;
+            border-radius: 4px;
+            padding: 20px;
+            form{
+                .input{
+                   width: 80%;
+                   margin: 20px 0px;
+                    div{
+                      width: 100%;
                     }
                 }
             }
+            p{
+                color: black;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
-        p{
-            color: black;
-            font-size: 20px;
-            margin-bottom: 20px;
+        .ViewDiv{
+            margin-top: 20px;
+            width: 80%;
+            box-shadow: 0px 0px 5px 1px #000000;
+            border-radius: 4px;
+            padding: 20px;
+            form{
+                .input{
+                   width: 80%;
+                   margin: 20px 0px;
+                    div{
+                      width: 100%;
+                    }
+                }
+            }
+            .Items{
+                table{
+                    width: 100%;
+                    text-align: center;
+                    border-spacing: 0px 2px;
+                    tr{
+                        height: 50px;
+                        background-color: rgba(206, 206, 206, 0.452);
+                        th{
+                            background-color: rgb(131, 131, 131);
+                        }
+                    }
+                }
+            }
+            p{
+                color: black;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
